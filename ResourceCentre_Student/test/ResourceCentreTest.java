@@ -51,10 +51,8 @@ public class ResourceCentreTest {
 	@Test
 	public void testAddChromebook() {
 
-
 		// write your code here
 		// Danish doing this.
-
 
 		assertNotNull("Test if there is valid Chromebook arraylist ot add to", chromebookList);
 
@@ -145,7 +143,19 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
 
+		assertNotNull("Test if there is valid chromebook arraylist to loan from", camcorderList);
 
+		String allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+
+		allCamcorder = ResourceCentre.retrieveAllCamcorder(camcorderList);
+	}
+
+	@Test
+	public void testDoReturnChromebook() {
+		// fail("Not yet implemented");
+		// write your code here
 		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
 
 		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
@@ -153,12 +163,6 @@ public class ResourceCentreTest {
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
 
 		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-	}
-
-	@Test
-	public void testDoReturnChromebook() {
-		// fail("Not yet implemented");
-		// write your code here
 	}
 
 	@After
