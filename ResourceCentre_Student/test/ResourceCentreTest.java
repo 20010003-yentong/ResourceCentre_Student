@@ -51,8 +51,10 @@ public class ResourceCentreTest {
 	@Test
 	public void testAddChromebook() {
 
+
 		// write your code here
 		// Danish doing this.
+
 
 		assertNotNull("Test if there is valid Chromebook arraylist ot add to", chromebookList);
 
@@ -145,13 +147,12 @@ public class ResourceCentreTest {
 
 
 		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
-		
-		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+
+		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
 		String testOutput = "";
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
-		
+
 		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-		
 	}
 
 	@Test
