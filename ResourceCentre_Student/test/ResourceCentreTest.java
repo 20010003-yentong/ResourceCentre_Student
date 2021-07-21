@@ -51,7 +51,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testAddChromebook() {
 		//fail("Not yet implemented");
-		// write your code here
+		// write your code here 
 	}
 	
 	@Test
@@ -95,6 +95,14 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
+		
+		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
+		
+		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+		
 	}
 	
 	@Test
