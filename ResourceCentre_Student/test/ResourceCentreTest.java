@@ -50,9 +50,16 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testAddChromebook() {
-		//fail("Not yet implemented");
-		// write your code here 
 
+		assertNotNull("Test if there is valid Chromebook arraylist ot add to", chromebookList);
+
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
+
+		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
+
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		assertEquals("Test that Chromebook arraylist size is 2?", 2, chromebookList.size());
 	}
 
 	@Test
@@ -83,6 +90,9 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testRetrieveAllChromebook() {
+
+		// fail("Not yet implemented");
+
 		// write your code here
 		// yentong is doing this
 		// Test if Item list is not null but empty, so that can add a new item
@@ -122,14 +132,6 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		// fail("Not yet implemented");
 		// write your code here
-		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
-		
-		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
-		
-		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-		
 	}
 
 	@Test
@@ -137,6 +139,13 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
 
+		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
+
+		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
+
+		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
 	}
 
 	@Test
