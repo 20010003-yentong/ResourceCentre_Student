@@ -298,7 +298,7 @@ public class ResourceCentre {
 	}
 
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList, String tag) {
-		// write your code here
+		// write your code here - Bryan
 		boolean isReturned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
@@ -314,7 +314,7 @@ public class ResourceCentre {
 	}
 
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
-		// write your code here
+		// write your code here - Bryan
 		ResourceCentre.viewAllChromebook(chromebookList);
 		String tag = Helper.readString("Enter asset tag > ");
 		Boolean isReturned = doReturnChromebook(chromebookList, tag);
