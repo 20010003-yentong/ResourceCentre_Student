@@ -50,13 +50,9 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testAddChromebook() {
-<<<<<<< HEAD
 		//fail("Not yet implemented");
 		// write your code here 
-=======
-		// fail("Not yet implemented");
-		// write your code here
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
+
 	}
 
 	@Test
