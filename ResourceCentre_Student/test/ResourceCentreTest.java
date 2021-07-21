@@ -82,9 +82,8 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testRetrieveAllChromebook() {
-		// fail("Not yet implemented");
 		// write your code here
-		//yentong is doing this
+		// yentong is doing this
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 
@@ -102,8 +101,10 @@ public class ResourceCentreTest {
 		// from the SourceCentre
 		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
 
-		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CB0011", "My Google Chromebook 1st", "Mac OS");
-		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CB0012", "SAMSUNG Chromebook 4+", "Win 10");
+		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n", "CB0011", "My Google Chromebook 1st", "Yes", "",
+				"Mac OS");
+		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n", "CB0012", "SAMSUNG Chromebook 4+", "Yes", "",
+				"Win 10");
 
 		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 
