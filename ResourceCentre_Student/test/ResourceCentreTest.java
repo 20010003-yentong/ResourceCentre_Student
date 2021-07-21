@@ -50,8 +50,16 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testAddChromebook() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		//fail("Not yet implemented");
+		// write your code here 
+=======
+>>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 		// fail("Not yet implemented");
 		// write your code here
+<<<<<<< HEAD
 		// Danish doing this.
 
 		assertNotNull("Test if there is valid Chromebook arraylist ot add to", chromebookList);
@@ -63,6 +71,9 @@ public class ResourceCentreTest {
 
 		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that Chromebook arraylist size is 2?", 2, chromebookList.size());
+=======
+>>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
+>>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	}
 
 	@Test
@@ -93,10 +104,36 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testRetrieveAllChromebook() {
-		// fail("Not yet implemented");
-		// write your code here
-	}
 
+		// fail("Not yet implemented");
+
+		// write your code here
+		// yentong is doing this
+		// Test if Item list is not null but empty, so that can add a new item
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+
+		// test if the list of chromebook retrieved from the SourceCentre is empty
+		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+
+		// Given an empty list, after adding 2 items, test if the size of the list is 2
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		assertEquals("Test if that Chromebook arraylist size is 2?", 2, chromebookList.size());
+
+		// test if the expected output string same as the list of chromebook retrieved
+		// from the SourceCentre
+		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+
+		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n", "CB0011", "My Google Chromebook 1st", "Yes", "",
+				"Mac OS");
+		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n", "CB0012", "SAMSUNG Chromebook 4+", "Yes", "",
+				"Win 10");
+
+		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
+
+	}
 	@Test
 	public void testDoLoanCamcorder() {
 		// fail("Not yet implemented");
@@ -108,6 +145,7 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		// fail("Not yet implemented");
 		// write your code here
+<<<<<<< HEAD
 	}
 
 	@Test
@@ -115,8 +153,28 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
 
+=======
+		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
+		
+		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+		String testOutput = "";
+		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
+		
+		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+		
+>>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	}
 
+<<<<<<< HEAD
+=======
+	@Test
+	public void testDoReturnCamcorder() {
+		// fail("Not yet implemented");
+		// write your code here
+
+	}
+
+>>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	@Test
 	public void testDoReturnChromebook() {
 		// fail("Not yet implemented");
