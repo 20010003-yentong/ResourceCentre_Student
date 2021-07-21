@@ -50,16 +50,8 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testAddChromebook() {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-		//fail("Not yet implemented");
-		// write your code here 
-=======
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
-		// fail("Not yet implemented");
+
 		// write your code here
-<<<<<<< HEAD
 		// Danish doing this.
 
 		assertNotNull("Test if there is valid Chromebook arraylist ot add to", chromebookList);
@@ -71,9 +63,6 @@ public class ResourceCentreTest {
 
 		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test that Chromebook arraylist size is 2?", 2, chromebookList.size());
-=======
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	}
 
 	@Test
@@ -134,6 +123,7 @@ public class ResourceCentreTest {
 		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 
 	}
+
 	@Test
 	public void testDoLoanCamcorder() {
 		// fail("Not yet implemented");
@@ -145,7 +135,7 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		// fail("Not yet implemented");
 		// write your code here
-<<<<<<< HEAD
+
 	}
 
 	@Test
@@ -153,7 +143,7 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
 
-=======
+
 		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
 		
 		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
@@ -162,19 +152,8 @@ public class ResourceCentreTest {
 		
 		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
 		
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	}
 
-<<<<<<< HEAD
-=======
-	@Test
-	public void testDoReturnCamcorder() {
-		// fail("Not yet implemented");
-		// write your code here
-
-	}
-
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
 	@Test
 	public void testDoReturnChromebook() {
 		// fail("Not yet implemented");
