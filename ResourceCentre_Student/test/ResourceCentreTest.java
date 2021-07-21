@@ -50,13 +50,10 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testAddChromebook() {
-<<<<<<< HEAD
-		//fail("Not yet implemented");
-		// write your code here 
-=======
+
 		// fail("Not yet implemented");
 		// write your code here
->>>>>>> branch 'master' of https://github.com/20010003-yentong/ResourceCentre_Student.git
+
 	}
 
 	@Test
@@ -127,13 +124,13 @@ public class ResourceCentreTest {
 		// fail("Not yet implemented");
 		// write your code here
 		assertNotNull("Test if there is valid chromebook arraylist to loan from", chromebookList);
-		
-		String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
+
+		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
 		String testOutput = "";
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromebook);
-		
+
 		allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-		
+
 	}
 
 	@Test
